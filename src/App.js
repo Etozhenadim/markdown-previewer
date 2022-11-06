@@ -3,8 +3,6 @@ import { marked } from "marked";
 
 import "./App.css";
 function App() {
-  //heading element (H1 size), a sub heading element (H2 size),
-  //a link, inline code, a code block, a list item, a blockquote, an image, and bolded text.
   const [text, setText] = useState(` # H1
   ## H2,
   [title](https://www.example.com),
@@ -30,7 +28,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Markdown Previewer</h1>
+      <h1 id="title">Markdown Previewer</h1>
       <textarea
         id="editor"
         value={text}

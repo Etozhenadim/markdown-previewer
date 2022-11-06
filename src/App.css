@@ -3,6 +3,25 @@
     padding: 0;
 }
 
+body { 
+    box-sizing: border-box;
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://i.postimg.cc/3xpfQV5s/noise-bg.png);
+    background-color: #155;
+  }
+
+#title{
+color: #eee;
+font-family: 'Rubik', sans-serif;
+text-align: center;
+font-size: 36px;
+text-shadow: 5px 5px #333;
+}
+
 
 .App {
     display: flex;
@@ -11,6 +30,7 @@
     align-items: center;
     width: 780px;
     margin: 0 auto;
+    padding: 50px;
 }
 
 #editor {
@@ -18,7 +38,9 @@
     width: 480px;
     border-radius: 8px;
     padding: 20px;
-    margin: 25px 0
+    margin: 25px 0;
+    background: #eee;
+    box-shadow: 5px 5px #448484;
 
 }
 
@@ -29,4 +51,10 @@
     border: 1px solid #000;
     border-radius: 8px;
     padding: 20px;
+    background: #333;
+    color: white;
+    font-family: 'Molengo', sans-serif;
+    font-size: 1rem;
+    box-shadow: 5px 5px #448484;
+    overflow-y: auto;
 }
